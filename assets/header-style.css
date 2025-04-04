@@ -1,0 +1,46 @@
+.header_contact span,
+.header_contact a {
+    position: relative;
+    color: var(--text-color);
+}
+
+.header_contact a:hover {
+    color: var(--text-color-light);
+}
+
+.header_contact i {
+    margin-right: 0.2rem;
+}
+
+.header_contact span:not(:last-child),
+.header_contact a:not(:last-child) {
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+}
+
+/* Header Styles */
+.header {
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_name {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    font-family: var(--heading-font);
+}
+
+.header_title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    font-family: var(--heading-font);
+}
+
+.header_contact {
+    display: flex;
+    font-size: var(--small-font-size);
+    font-family: var(--heading-font);
+}

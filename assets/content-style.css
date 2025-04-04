@@ -1,0 +1,166 @@
+/* Resume Styles */
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    line-height: 1.5;
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    padding: var(--margin-3) var(--margin-4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media print {
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: var(--margin-3) var(--margin-4);
+        box-shadow: none;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    @page {
+        size: A4;
+        margin: 0;
+        bleed: 0;
+    }
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        break-inside: avoid;
+    }
+}
+
+/* Main Content Styles */
+.main {
+    max-width: 968px;
+    display: grid;
+    grid-template-columns: 100%;
+    padding: var(--margin-1) 0;
+}
+
+/* Section Styles */
+.heading_2 {
+    font-family: var(--heading-font);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    margin-bottom: 0.2rem;
+    border-bottom: 1pt solid var(--text-color);
+}
+
+/* Common Section Content Styles */
+.section_content {
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.section_project {
+    margin-bottom: 0.1rem;
+    padding-left: 0.25rem;
+}
+
+.bullet_layout {
+    display: flex;
+    align-items: top;
+}
+
+.bullet {
+    font-weight: 900;
+    font-size: var(--small-font-size);
+    padding-right: 5px;
+}
+
+.heading_3 {
+    font-family: var(--heading-font);
+    font-size: var(--h3-font-size);
+    /* font-size: var(--normal-font-size); */
+    font-weight: var(--font-semi-bold);
+}
+
+.text_bold {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-bold);
+}
+
+.text_normal {
+    font-size: var(--normal-font-size);
+}
+
+.text_bold_italic {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-bold);
+    /* font-style: italic; */
+}
+
+.text_small {
+    font-size: var(--small-font-size);
+}
+
+.section_main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -2px;
+}
+
+.section_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description_container {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* certification */
+
+.certification-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.certification-table td:nth-child(1) {
+    text-align: left;
+    width: 50%;
+}
+
+.certification-table td:nth-child(2) {
+    text-align: left;
+    width: 20%;
+}
+
+.certification-table td:nth-child(3) {
+    text-align: right;
+    width: 30%;
+}
+
+/* skill */
+.skill-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skill-table td:nth-child(1) {
+    text-align: left;
+    width: 14%;
+    display: flex;
+    align-items: top;
+}
+
+.skill-table td:nth-child(2) {
+    text-align: left;
+    width: 86%;
+}
